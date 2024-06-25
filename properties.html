@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العقارات</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunctions.js"></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="company-title">شركة الوئام للعقارات</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="aboutus.html">من نحن</a></li>
+                <li><a href="properties.html">العقارات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+    <main>
+        <section>
+            <center><h2>العقارات المتاحة للإيجار</h2></center>
+            <table>
+                <tr>
+                    <th>المدينة</th>
+                    <th>التفاصيل</th>
+                    <th>الإيجار الشهري</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>شراء</th>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>شقة غرفة وصالة - 70 م²</td>
+                    <td>500000 ل.س</td>
+                    <td><button onclick="toggleDetails(1)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details1" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: ركن الدين</p>
+                        <p>الطابق الثالث</p>
+                        <p>متوفر كراج</p>
+                        <p>بلكون مساحة 12 متر²</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/1.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>حمص</td>
+                    <td>دكان - 50 م²</td>
+                    <td>250000 ل.س</td>
+                    <td><button onclick="toggleDetails(2)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details2" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: بابا عمرو</p>
+                        <p>الطابق الأرضي</p>
+                        <p>متوفر مواقف</p>
+                        <p>موقع تجاري</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/2.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>شقة فارغة - غرفتين وصالة - 110 م²</td>
+                    <td>600000 ل.س</td>
+                    <td><button onclick="toggleDetails(3)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details3" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: المزة</p>
+                        <p>الطابق الخامس</p>
+                        <p>متوفر مصعد</p>
+                        <p>إطلالة رائعة</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/3.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>حلب</td>
+                    <td>شقة مفروشة - 90 م²</td>
+                    <td>550000 ل.س</td>
+                    <td><button onclick="toggleDetails(4)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details4" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: الشهباء</p>
+                        <p>الطابق الثاني</p>
+                        <p>متوفر كراج</p>
+                        <p>قريب من الخدمات</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/4.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>طرطوس</td>
+                    <td>فيلا - 300 م²</td>
+                    <td>1500000 ل.س</td>
+                    <td><button onclick="toggleDetails(5)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details5" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: مشتى الحلو</p>
+                        <p>مساحة واسعة</p>
+                        <p>حديقة خاصة</p>
+                        <p>إطلالة بحرية</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/5.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>اللاذقية</td>
+                    <td>محل تجاري - 45 م²</td>
+                    <td>400000 ل.س</td>
+                    <td><button onclick="toggleDetails(6)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details6" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: الزراعة</p>
+                        <p>الطابق الأرضي</p>
+                        <p>موقع مميز</p>
+                        <p>بلكون صغير</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/6.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>حمص</td>
+                    <td>شقة - 120 م²</td>
+                    <td>700000 ل.س</td>
+                    <td><button onclick="toggleDetails(7)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details7" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: المحطة</p>
+                        <p>الطابق الأول</p>
+                        <p>موقع هادئ</p>
+                        <p>متوفر مصعد</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/7.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>دمشق</td>
+                    <td>شقة - 140 م²</td>
+                    <td>800000 ل.س</td>
+                    <td><button onclick="toggleDetails(8)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details8" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: الزهراء</p>
+                        <p>الطابق الرابع</p>
+                        <p>موقع هادئ</p>
+                        <p>إطلالة جبلية</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/8.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>حماة</td>
+                    <td>شقة - 100 م²</td>
+                    <td>450000 ل.س</td>
+                    <td><button onclick="toggleDetails(9)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details9" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: الشريعة</p>
+                        <p>الطابق الثاني</p>
+                        <p>مفروشة جزئياً</p>
+                        <p>قريب من المدارس</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/9.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+                <tr>
+                    <td>دير الزور</td>
+                    <td>شقة - 85 م²</td>
+                    <td>350000 ل.س</td>
+                    <td><button onclick="toggleDetails(10)">إظهار التفاصيل</button></td>
+                    <td><button onclick="showForm()">شراء</button></td>
+                </tr>
+                <tr id="details10" class="details">
+                    <td colspan="5">
+                        <p>المنطقة: الجورة</p>
+                        <p>الطابق الثالث</p>
+                        <p>بلكون</p>
+                        <p>متوفر كراج</p>
+                        <p>الملكية: طابو</p>
+                        <img src="images/10.jpg" alt="صورة العقار">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <div id="purchaseForm" style="display: none;">
+            <form id="buyForm" onsubmit="return validateForm()">
+                <label for="fullName"><b>الاسم الكامل:</b></label>
+                <input type="text" placeholder="Full name" id="fullName" name="fullName" required pattern="[ء-ي ]+">
+        
+                <label for="student"><b>الرقم الوطني:</b></label>
+                <input type="text" placeholder="id number" id="number_s" name="number_s" maxlength="11" pattern="^(0[1-9]|1[0-5])[0-9]{9}$" required><br>
+        
+                <label for="date"><b>تاريخ الميلاد:</b><br></label>
+                <input type="date" placeholder="DD/MM/YYYY" id="birthDate" name="birthDate" pattern="((0[1-9]|1\d|2\d|3[01])\0[1-9]|1[0-2])\/(19|20)\d{2}" required>
+        
+                <br><label for="mobileNumber">رقم الموبايل:</b></label>
+                <input type="text" placeholder="9639xxxxxxx" id="phonenumber" name="phonenumber" maxlength="12" pattern="^9639[0-9]{7}$" required>
+        
+                <label for="student"><b>البريد الإلكتروني:</b></label>
+                <input type="email" placeholder="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+        
+                <label for="captcha">رمز التحقق:</label>
+                <input type="text" id="captcha" name="captcha" required>
+                <img id="captchaImage" src="" alt="رمز التحقق">
+                <button type="button" onclick="changeCaptcha()">تغيير الرمز</button>
+        
+                <button type="submit">شراء</button>
+                <button type="button" onclick="hideForm()">إلغاء</button> 
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <p>© 2024 شركة الوئام  للعقارات  </p>
+    </footer>
+</body>
+
+</html>
